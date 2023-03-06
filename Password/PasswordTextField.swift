@@ -63,8 +63,6 @@ extension PasswordTextField {
         errorMessageLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         errorMessageLabel.textColor = .systemRed
         errorMessageLabel.text = "Your password must meet the requirements below."
-//        errorMessageLabel.adjustsFontSizeToFitWidth = true // deals with long text (not recommended)
-//        errorMessageLabel.minimumScaleFactor = 0.8 // deals with long text (not recommended)
         errorMessageLabel.numberOfLines = 0
         errorMessageLabel.lineBreakMode = .byWordWrapping
         errorMessageLabel.isHidden = false
