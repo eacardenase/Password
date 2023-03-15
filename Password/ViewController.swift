@@ -30,6 +30,8 @@ extension ViewController {
         newPasswordTextField.translatesAutoresizingMaskIntoConstraints = false
         
         statusView.translatesAutoresizingMaskIntoConstraints = false
+        statusView.layer.cornerRadius = 5
+        statusView.clipsToBounds = true
     }
     
     func layout() {
