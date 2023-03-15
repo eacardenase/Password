@@ -59,15 +59,23 @@ extension PasswordStatusView {
         
         addSubview(stackView)
         
+        // stackView
         NSLayoutConstraint.activate([
-//            stackView.topAnchor.constraint(equalTo: topAnchor, constant: 16),
-//            stackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 16),
-//            stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16),
-//            stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -16)
             stackView.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 2),
             stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 2),
             trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 2),
             bottomAnchor.constraint(equalToSystemSpacingBelow: stackView.bottomAnchor, multiplier: 2)
+        ])
+        
+        // hard coded heights
+        let height: CGFloat = 20
+        
+        NSLayoutConstraint.activate([
+            lengthCriteriaView.heightAnchor.constraint(equalToConstant: height),
+            upperCaseCriteriaView.heightAnchor.constraint(equalToConstant: height),
+            lowerCaseCriteriaView.heightAnchor.constraint(equalToConstant: height),
+            digitCriteriaView.heightAnchor.constraint(equalToConstant: height),
+            specialCharacterCriteriaView.heightAnchor.constraint(equalToConstant: height)
         ])
     }
 }
