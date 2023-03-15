@@ -42,6 +42,8 @@ extension PasswordStatusView {
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.axis = .vertical
         stackView.spacing = 8
+        stackView.backgroundColor = .systemRed
+        stackView.distribution = .equalCentering
         
         lengthCriteriaView.translatesAutoresizingMaskIntoConstraints = false
         upperCaseCriteriaView.translatesAutoresizingMaskIntoConstraints = false
@@ -63,7 +65,8 @@ extension PasswordStatusView {
         NSLayoutConstraint.activate([
             stackView.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 2),
             stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 2),
-            trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 2)
+            trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 2),
+            bottomAnchor.constraint(equalToSystemSpacingBelow: stackView.bottomAnchor, multiplier: 2)
         ])
     }
 }
