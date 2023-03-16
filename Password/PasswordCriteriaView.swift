@@ -19,11 +19,7 @@ class PasswordCriteriaView: UIView {
     
     var isCriteriaMet: Bool = false {
         didSet {
-            if isCriteriaMet {
-                imageView.image = checkmarkImage
-            } else {
-                imageView.image = xmarkImage
-            }
+            imageView.image = isCriteriaMet ? checkmarkImage : xmarkImage
         }
     }
     

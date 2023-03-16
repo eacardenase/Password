@@ -140,5 +140,4 @@ extension PasswordTextField {
 
 // MARK: - UITextFieldDelegate
 extension PasswordTextField: UITextFieldDelegate {
-    
 }
