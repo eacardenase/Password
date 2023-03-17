@@ -64,7 +64,7 @@
 			children = (
 				207AE50A29B269F00050AE0E /* AppDelegate.swift */,
 				207AE50E29B269F00050AE0E /* ViewController.swift */,
-				207AE52029B26C560050AE0E /* Login */,
+				2001EF7A29B3AE800098999A /* PasswordTextField.swift */,
 				20AF732A29C21FBA001AA258 /* PasswordStatusView */,
 				207AE51F29B26ADB0050AE0E /* Files */,
 			);
@@ -79,14 +79,6 @@
 				207AE51829B269F10050AE0E /* Info.plist */,
 			);
 			name = Files;
-			sourceTree = "<group>";
-		};
-		207AE52029B26C560050AE0E /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				2001EF7A29B3AE800098999A /* PasswordTextField.swift */,
-			);
-			name = Login;
 			sourceTree = "<group>";
 		};
 		20AF732A29C21FBA001AA258 /* PasswordStatusView */ = {
