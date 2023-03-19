@@ -156,7 +156,30 @@ extension ViewController: PasswordTextFieldDelegate {
 // MARK: - Keyboard
 extension ViewController {
     @objc func keyboardWillShow(sender: NSNotification) {
-        view.frame.origin.y = view.frame.origin.y - 200
+        guard let userInfo = sender.userInfo,
+              let keyboardFrame = userInfo[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue,
+              let currentTextField = UIResponder.currentFirstResponder() as? UITextField else {
+            return
+        }
+        
+        // check if the top of the keyboard is above the bottom of the currently focused textField
+        let keyboardTopY = keyboardFrame.cgRectValue.origin.y
+        
+        // converting textField coordinate to its parent view coordinate
+        let convertedTextFieldFrame = view.convert(currentTextField.frame, from: currentTextField.superview)
+        
+        let textFieldBottomY = convertedTextFieldFrame.origin.y + convertedTextFieldFrame.size.height
+        
+        // if textField bottom is bellow keyboard top - bump the frame up
+        if textFieldBottomY > keyboardTopY {
+            // adjust view
+            let textBoxY = convertedTextFieldFrame.origin.y
+            let newFrameY = (textBoxY - keyboardTopY / 2) * -1
+            
+            view.frame.origin.y = newFrameY
+        }
+        
+        
     }
     
     @objc func keyboardWillHide(sender: NSNotification) {
