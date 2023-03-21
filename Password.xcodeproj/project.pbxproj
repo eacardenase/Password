@@ -10,6 +10,7 @@
 		2001EF7B29B3AE800098999A /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001EF7A29B3AE800098999A /* PasswordTextField.swift */; };
 		200DFD7329C3A79C00A9D787 /* PasswordCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200DFD7229C3A79C00A9D787 /* PasswordCriteria.swift */; };
 		202334F129CA39210040B32E /* PasswordCriteriaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202334F029CA39210040B32E /* PasswordCriteriaTests.swift */; };
+		202334F329CA45F50040B32E /* PasswordStatusViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 202334F229CA45F50040B32E /* PasswordStatusViewTests.swift */; };
 		207AE50B29B269F00050AE0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207AE50A29B269F00050AE0E /* AppDelegate.swift */; };
 		207AE50F29B269F00050AE0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207AE50E29B269F00050AE0E /* ViewController.swift */; };
 		207AE51429B269F10050AE0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 207AE51329B269F10050AE0E /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 		200DFD7229C3A79C00A9D787 /* PasswordCriteria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteria.swift; sourceTree = "<group>"; };
 		202334E729CA38040040B32E /* PasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		202334F029CA39210040B32E /* PasswordCriteriaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordCriteriaTests.swift; sourceTree = "<group>"; };
+		202334F229CA45F50040B32E /* PasswordStatusViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordStatusViewTests.swift; sourceTree = "<group>"; };
 		207AE50729B269F00050AE0E /* Password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Password.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		207AE50A29B269F00050AE0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		207AE50E29B269F00050AE0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				202334F029CA39210040B32E /* PasswordCriteriaTests.swift */,
+				202334F229CA45F50040B32E /* PasswordStatusViewTests.swift */,
 			);
 			path = PasswordTests;
 			sourceTree = "<group>";
@@ -234,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				202334F129CA39210040B32E /* PasswordCriteriaTests.swift in Sources */,
+				202334F329CA45F50040B32E /* PasswordStatusViewTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
