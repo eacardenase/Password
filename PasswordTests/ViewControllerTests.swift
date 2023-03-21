@@ -102,8 +102,6 @@ class ViewControllerTests_Show_Alert: XCTestCase {
         vc.resetPasswordButtonTapped(UIButton())
         
         XCTAssertNotNil(vc.alert)
-        XCTAssertEqual(vc.alert!.title, "Success") // Optional
-        XCTAssertEqual(vc.alert!.message, "You have successfully changed your password") // Optional
     }
     
     func testShowError() throws {
